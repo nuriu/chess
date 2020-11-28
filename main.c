@@ -8,7 +8,7 @@ int main()
     InitWindow(screenWidth, screenHeight, "Chess");
     SetTargetFPS(targetFPS);
 
-    InitBoard("assets/board.png", 0.0f, 0.4f);
+    InitBoard("assets/board.png");
 
     while (!WindowShouldClose())
     {
