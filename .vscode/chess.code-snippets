@@ -1,0 +1,29 @@
+{
+	"Header File": {
+		"scope": "c",
+		"prefix": "header",
+		"body": [
+			"#pragma once",
+			"",
+			"#ifndef ${1:GUARD_NAME}_H",
+			"#define ${1:GUARD_NAME}_H",
+			"",
+			"$0",
+			"",
+			"#endif",
+			""
+		],
+		"description": "header file with guards"
+	},
+	"Source File": {
+		"scope": "c",
+		"prefix": "src",
+		"body": [
+			"#include \"include/${1:header_file}.h\"",
+			"",
+			"$0",
+			""
+		],
+		"description": "source file with include"
+	}
+}
